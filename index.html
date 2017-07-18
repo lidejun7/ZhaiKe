@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="quanping" style="display: none;" id="quan_bg">
+			<span class="fr tuichu" id="tuichuB"></span>
+		</div>
+		<div class="denglu" style="display: none;" id="denglu">
+			<div class="denglu_top">
+				<span class="fl dengluA">登陆</span>
+				<span class="fr tuichu" id="tuichu"></span>
+			</div>
+			<div class="fl denglu_main">
+				<div class="denglu_label">
+					<label>
+						<input id="login_userId" name="" class="" placeholder="手机号/邮箱" maxlength="38" tabindex="1" type="text">
+						<em></em>
+					</label>
+					<p class="p_phonetip" id="p_phonetip">请输入正确的手机号码或邮箱</p>
+					<label >
+						<input id="login_pasword" name="userPwd" class="p_psw" placeholder="密码" maxlength="38" tabindex="2" type="password">
+						<i></i>
+						<span class="p_login_change_pwd p_closeeye">
+						</span>
+					</label>
+				</div>
+				<div class="p_osw_box">
+                        <label class="fl check_label">
+                            <div class="p_jz-psw p_js-pswselect fl" style="pointer-events: none;"></div>
+                          	  自动登录
+                        </label>
+                        <a class="fr" href="/account/security/resetPwd.do">忘记密码</a>
+				</div>
+				<input id="login_btn1" class="p_dl-btn" value="登录" type="button">
+			</div>
+			<div class="fr p_loginInfoR">
+                <h3>未注册，<span id="toRegister">直接注册</span>
+                </h3>
+                <fieldset>
+                    <legend>使用合作方账号登录</legend>
+                </fieldset>
+                <ul class="p_denglu">
+                    <li><a href="/wechat/login.do" target="_black"></a></li>
+                    <li><a href="/qqLogin.do" target="_black"></a></li>
+                    <li><a href="/OAuth4Code.do" target="_black"></a></li>
+                </ul>
+			</div>
+		</div>
+		<embed src="https://p.bokecc.com/flash/player.swf?vid=F9D6C0D830CFB9109C33DC5901307461&amp;siteid=75E8AC124E549185&amp;playerid=B0A6A806FCF6812C&amp;playertype=1&amp;autoStart=true" name="cc_F9D6C0D830CFB9109C33DC5901307461" wmode="transparent" allowfullscreen="true" allowscriptaccess="always" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"  class="shiping" style="display:none ;" id="shiping"></embed>
+		
+		<div class="denglu" id="zhuche" style="display: none;">
+			<div class="denglu_top">
+				<span class="fl dengluA">注册</span>
+				<span class="fr tuichu" id="tuichuA"></span>
+			</div>
+			<div class="fl denglu_main">
+				<div class="denglu_label">
+					<label>
+						<input id="user_name" name="" class="" placeholder="请输入手机号码或邮箱" maxlength="38" tabindex="1" type="text">
+						<em></em>
+					</label>
+					<p class="p_phonetip" id="p_phonetipA">请输入正确的手机号码或邮箱</p>
+					<div class="p_code">
+                        <input id="phone_code" name="phoneVerifyCode" maxlength="4" class="p_shuru fl" placeholder="验证码" type="text">
+                        <input id="get_code" class="p_get fr" value="获取验证码" type="button">
+                    </div>
+					<label >
+						<input id="login_pasword" name="userPwd" class="p_psw" placeholder="密码" maxlength="38" tabindex="2" type="password">
+						<i></i>
+						<span class="p_login_change_pwd p_closeeye">
+						</span>
+					</label>
+				</div>
+				<input id="login_btn1" class="p_dl-btn" value="立即注册" type="button">
+			</div>
+			<div class="fr p_loginInfoR">
+                <h3>已注册，<span id="toLogin">直接登陆</span>
+                </h3>
+                <fieldset>
+                    <legend>使用合作方账号登录</legend>
+                </fieldset>
+                <ul class="p_denglu">
+                    <li><a href="/wechat/login.do" target="_black"></a></li>
+                    <li><a href="/qqLogin.do" target="_black"></a></li>
+                    <li><a href="/OAuth4Code.do" target="_black"></a></li>
+                </ul>
+			</div>
+		</div>
+		<div class="right_nav">
+			<a href="http://www15.53kf.com/webCompany.php?arg=10126803&style=1"><img src="img/kefu_icon01.gif" /></a>
+			<a href="toFeedback.html"></a>
+			<a href="#top"></a>
+		</div>
+		<div class="top_nav">
+			<div class="logo1 fl">
+				<a href="index.html"><img src="img/logo-30.png" /></a>
+			</div>
+			<div class="column fl">
+				<a href="index.html">
+					<span>首页</span>
+				</a>
+				<a href="practicalReal.html">
+					<span>实战</span>
+				</a>
+				<a href="vlive.html">
+					<span>直播</span>
+				</a>
+				<a href="college.html">
+					<span>职业学校</span>
+				</a>
+			</div>
+			<div class="seek fr">
+				<input type="text" placeholder="搜索课程" class="case" />
+				<a href="http://www.zker.com.cn/searchCourse.do?key="><input type="button" class="fw" /></a>
+				<a id="loginBtn">登陆</a>
+				<a id="registerBtn">注册</a>
+			</div>
+
+		</div>
+		<div class="header">
+			<div class="banner" id="container">
+				<div class="pre" id="pre"></div>
+				<div class="next" id="next"></div>
+				<div class="container" id="list" style="left:0px;">
+					<a href="#"><img src="img/OTObanner-xin 2.jpg"></a>
+					<a href="#"><img src="img/web1.png"></a>
+					<a href="#"><img src="img/JAVA--.png"></a>
+					<a href="#"><img src="img/201612071611.jpg"></a>
+					<a href="#"><img src="img/dayidaer.jpg"></a>
+					<a href="#"><img src="img/banner03.jpg"></a>
+				</div>
+				<div class="dot" id="dot">
+					<span index="1" class="on"></span>
+					<span index="2"></span>
+					<span index="3"></span>
+					<span index="4"></span>
+					<span index="5"></span>
+					<span index="6"></span>
+				</div>
+				<dl class="mode">
+					<dt>前端开发 <span class="dt_span">></span>
+						<div  class="a1">
+							<ul>
+								<p>分类目录</p>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=2">Flex <span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=3">JavaScript <span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=4">Bootstrap <span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=5">JQuery<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=6">Ajax<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=7">HTML/CSS<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=8">Ext<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=9">HTML5</a></li>
+								<img src="img/gldh.gif"/>
+							</ul>
+						</div>
+					</dt>
+					<dt>移动开发 <span class="dt_span">></span>
+						<div  class="a1">
+							<ul>
+								<p>分类目录</p>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=47">IOS <span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=48">Android <span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=49">Unity 3D <span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=50">Cocos2d-x</a></li>
+								<p class="a1_p">职业学院</p>
+								<a href="http://www.zker.com.cn/college/purchase/toDetail.do?pcId=6">Unity游戏开发职场备战班</a>
+								<img src="img/gldh.gif"/>
+							</ul>
+						</div>
+					</dt>
+					<dt>云数据&amp;大数据 <span class="dt_span">></span>
+						<div  class="a1">
+							<ul>
+								<p>分类目录</p>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=66">CloudStack <span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=67">云计算 <span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=69">Storm <span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=70">大数据<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=106">OpenStack<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=107">Spark <span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=108">Hadoop<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=109">其他</a></li>
+								<img src="img/gldh.gif"/>
+							</ul>
+						</div>
+					</dt>
+					<dt>后端开发 <span class="dt_span">></span>
+						<div  class="a1">
+							<ul>
+								<p>分类目录</p>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=81">Java <span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=82">PHP <span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=83">C/C++ <span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=85">Python</a></li>
+								<p class="a1_p">职业学院</p>
+								<a href="http://www.zker.com.cn/college/purchase/toDetail.do?pcId=2" class="a1_a">Java软件开发职场备战班</a>
+								<a href="http://www.zker.com.cn/college/purchase/toDetail.do?pcId=7" class="a1_a">大学生Java职场入门成长计划</a>
+								<img src="img/gldh.gif"/>
+							</ul>
+						</div>
+					</dt>
+					<dt>数据库 <span class="dt_span">></span>
+						<div  class="a1">
+							<ul>
+								<p>分类目录</p>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=89">My SQL<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=90">DB2 <span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=91">SQL Server BI<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=92">SQL Server<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=93">Oracle<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=94">MongoDB</a></li>
+								<img src="img/gldh.gif"/>
+							</ul>
+						</div>
+					</dt>
+					<dt>嵌入式 <span class="dt_span">></span>
+						<div  class="a1">
+							<ul>
+								<p>分类目录</p>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=34">操作系统移植<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=37">QT<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=38">接口编程<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=39">Linux C<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=40">ZigBee<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=41">GTK<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=42">驱动编程<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=43">MFC<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=44">TinyOS<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=45">网络编程</a></li>
+								<img src="img/gldh.gif"/>
+							</ul>
+						</div>
+					</dt>
+					<dt>前沿技术&amp;其他 <span class="dt_span">></span>
+						<div  class="a1">
+							<ul>
+								<p>分类目录</p>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=111">前沿技术<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=112">软件工程<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=113">职业素质<span>/</span></a></li>
+								<li><a href="http://www.zker.com.cn/course/list.do?typeId=114">其他</a></li>
+								<img src="img/gldh.gif"/>
+							</ul>
+						</div>
+					</dt>
+				</dl>
+			</div>
+		</div>
+		<div class="main">
+			<div class="profession">
+				<p class="fon20">职业路径</p>
+				<ul style="margin-top: 30px;overflow: hidden;">
+					<li>
+						<a href="http://www.zker.com.cn/toCourseJob.do?profId=1">
+							<img src="img/gw01.png">
+							<img src="img/gw01bg.png" style="margin-left: 0;border-radius: 4px;" />
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/toCourseJob.do?profId=23">
+							<img src="img/gw03.png" />
+							<img src="img/gw03bg.png" />
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/toCourseJob.do?profId=25">
+							<img src="img/gw05.png" />
+							<img src="img/gw05bg.png" />
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/toCourseJob.do?profId=10">
+							<img src="img/gw02.png" />
+							<img src="img/gw02bg.png" />
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/toCourseJob.do?profId=24">
+							<img src="img/gw06.png" />
+							<img src="img/gw06bg.png" />
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/toCourseJob.do?profId=26">
+							<img src="img/gw04.png" />
+							<img src="img/gw04bg.png" />
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="course">
+				<p style="font-size:20px;margin-top: 30px;color: #333333;">热门课程
+					<a href="http://www.zker.com.cn/course/list.do" style="float: right;font-size: 14px;">全部课程 ></a>
+				</p>
+				<ul style="margin-top: 30px;overflow: hidden;"id="cartoon">
+					<li>
+						<a href="http://www.zker.com.cn/course-%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91-78.html" target="_blank">
+							<img src="img/Javajichu.jpg">
+							<p>Java语言编程基础</p>
+							<p>100357人学习<span style="float: right;color: #8ac65c;margin-right: 15px;">免费</span></p>
+							<div class="course_none">
+								<span>快速掌握Java语言的基本语法，包括类的结构，访问权限，操作符，流程控制等。</span>
+								<p>初级 | 5节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/course-%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91-82.html" target="_blank">
+							<img src="img/Javagaojiyuyan.jpg" />
+							<p>Java语言高级编程</p>
+							<p>40152人学习<span style="float: right;color: #8ac65c;margin-right: 15px;">免费</span></p>
+							<div class="course_none">
+								<span>通过大量实际代码演示，学习Java集合、IO编程、多线程编程等高级主题。</span>
+								<p>初级 | 8节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/course-%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91-85.html" target="_blank">
+							<img src="img/Javamiangxiangduixiang.jpg" />
+							<p>Java语言面向对象思想</p>
+							<p>30635人学习<span style="float: right;color: #8ac65c;margin-right: 15px;">免费</span></p>
+							<div class="course_none">
+								<span>深入理解关联、依赖、继承三种常见的对象间关系，熟练使用接口进行编程。</span>
+								<p>初级 | 1节</p>
+							</div>
+						</a>
+
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/course-%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-34.html" target="_blank">
+							<img src="img/6HTML5.jpg" />
+							<p>HTML5编程</p>
+							<p>30650人学习<span style="float: right;color: #8ac65c;margin-right: 15px;">免费</span></p>
+							<div class="course_none">
+								<span>万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改，移动互联网的核心技术</span>
+								<p>中级 | 19节</p>
+							</div>
+						</a>
+
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/course-%E6%95%B0%E6%8D%AE%E5%BA%93-102.html" target="_blank">
+							<img src="img/OracleSQL.jpg">
+							<p>Oracle数据库开发（SQL语言）</p>
+							<p>27574人学习<span style="float: right;color: #8ac65c;margin-right: 15px;">免费</span></p>
+							<div class="course_none">
+								<span>我们的生活中无时无刻不用到数据库，从你的证件，你的银行账户，网站的数据，各种管理系统，只要用到数据的地方都是通过数据库管理。数据库是软件开发的一门重要技术。</span>
+								<p>中级 | 6节</p>
+							</div>
+						</a>
+
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/course-%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-35.html" target="_blank">
+							<img src="img/HTML.jpg">
+							<p>HTML编程</p>
+							<p>25717人学习<span style="float: right;color: #8ac65c;margin-right: 15px;">免费</span></p>
+							<div class="course_none">
+								<span>快速了解HTML4中常用的元素</span>
+								<p>初级 | 5节</p>
+							</div>
+						</a>
+
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/course-%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-100.html" target="_blank">
+							<img src="img/qianduanbootstrap.jpg">
+							<p>前端开源工具包bootstrap框架</p>
+							<p>24545人学习<span style="float: right;color: #8ac65c;margin-right: 15px;">免费</span></p>
+							<div class="course_none">
+								<span>前端开发工具包Bootstrap，是Twitter推出的一个开源的用于前端开发的工具包。由Twitter的设计师Mark Otto和Jacob Thornton合作开</span>
+								<p>中级 | 39节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/course-%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91-39.html" target="_blank">
+							<img src="img/javaEE-04.jpg">
+							<p>javaEE Web开发从入门到精通</p>
+							<p>23906人学习<span style="float: right;color: #8ac65c;margin-right: 15px;">免费</span></p>
+							<div class="course_none">
+								<span>从基础开始，循序渐进学习JSP、Servlet组件的使用，熟练掌握JavaEE Web应用开发，为学习开源框架打下坚实基础</span>
+								<p>中级 | 10节</p>
+							</div>
+						</a>
+
+					</li>
+				</ul>
+			</div>
+			<div class="practice">
+				<p style="font-size:20px;margin-top: 30px;color: #333333;">热门实战
+					<a href="practicalReal.html" style="float: right;font-size: 14px;">全部实战 ></a>
+				</p>
+				<ul style="margin-top: 30px;overflow: hidden;"id="practice">
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=28" target="_blank">
+							<img src="img/20161208112133687.jpg">
+							<p>用13个项目实践数据库设计</p>
+							<p>￥86</p>
+							<div class="course_none">
+								<span>不一样的攻城狮！</span>
+								<p>高级 | 32节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=30" target="_blank">
+							<img src="img/20161208153005538.jpg" />
+							<p>高德地图Android系统SDK二次开发</p>
+							<p>￥56</p>
+							<div class="course_none">
+								<span>专注高德地图，从零开始学习Android手机端地图开发，定位、手势控制、搜索服务、覆盖物操作、地图事件…..应有尽有!</span>
+								<p>中级 | 38节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=38" target="_blank">
+							<img src="img/20161207161124508.jpg" />
+							<p>SSH三大框架打造以图会友社交平台</p>
+							<p>￥168</p>
+							<div class="course_none">
+								<span>一个以图会友的网站，一个最新技术的综合案例，一个使用Spring、Hibernate、Struts架构设计的最佳实践。</span>
+								<p>高级 | 81节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=36" target="_blank">
+							<img src="img/20161207161148200.jpg" />
+							<p>基于HTML5的跨平台关卡类游戏SPA实现</p>
+							<p>￥36</p>
+							<div class="course_none">
+								<span>HTML5、CSS3、ES6、Zepto.js、MVC模式、动态模板…….最新的、最实用的移动端开发技术应有尽有，玩着玩着就会了。</span>
+								<p>中级 | 21节</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="live">
+				<p style="font-size:20px;margin-top: 30px;color: #333333;">热门直播
+					<a href="http://www.zker.com.cn/vlive/v/list.do" style="float: right;font-size: 14px;">全部直播 ></a>
+				</p>
+				<ul style="margin-top: 30px;height: 350px;"id="live">
+					<li>
+						<a href="http://www.zker.com.cn/vlive/v/detail.do?vleId=235" target="_blank">
+							<img src="img/1482808789354.png" style="width: 590px;border-radius: 4px 4px 0 0;">
+							<p>你所遗忘的2016 <span>2016年12月28日 19:00</span></p>
+							<p>
+								<img src="img/zker_avatar1.jpg" />
+								<img src="img/6.jpg" />
+								<img src="img/zker_avatar1.jpg" />
+								<img src="img/zker_avatar1.jpg" />
+							</p>
+							<em>77人报名</em>
+							<p><img src="img/zker_avatar1_192500094.jpg" style="width: 50px;" />毒鸡汤</p>
+						</a>
+					</li>
+					<li style="margin-left: 20px;">
+						<a href="http://www.zker.com.cn/vlive/v/detail.do?vleId=233" target="_blank">
+							<img src="img/1482141206029.jpg" style="width: 590px;border-radius: 4px 4px 0 0;">
+							<p>程序员的前世今生<span>2016年12月21日 19:00</span></p>
+							<p>
+								<img src="img/zker_avatar1.jpg" />
+								<img src="img/6.jpg" />
+								<img src="img/zker_avatar1_192505750.jpg">
+								<img src="img/zker_avatar1.jpg" />
+							</p>
+							<em>86人报名</em>
+							<p><img src="img/zker_avatar1_192500094.jpg" style="width: 50px;" />毒鸡汤</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="expert" id="expert">
+			<p style="font-size:20px;margin: 30px 0 0 190px;color: #333333;">职场专家</p>
+			<div class="int_pre" id="int_pre"></div>
+			<div class="int_next" id="int_next"></div>
+			<div class="introduce" style="left:0px;" id="int_list">
+				<div class="introduce_A" style="display: block;">
+					<img src="img/teacher01.jpg" />
+					<div class="introduce_1">
+						<p>
+							阿尔滨工业大学软件学院教学指导委员会委员，曾任微软中国技术中心高级软件开发工程师。10年以上互联网开发经验。
+						</p>
+						<p style="margin-top: 70px;">
+							周涛
+							<span style="color: #c2c2c2;font-size: 18px;line-height: 70px;">我是宅课学院职场专家</span>
+						</p>
+					</div>
+				</div>
+				<div class="introduce_B">
+					<img src="img/teacher02.jpg" />
+					<div class="introduce_1">
+						<p>
+							Oracle认证企业级架构师、工程教育认证企业专家。精通面向对象程序设计、JavaEE企业应用开发。精通企业级应用架构设计。
+						</p>
+						<p style="margin-top: 70px;">
+							王晓华
+							<span style="color: #c2c2c2;font-size: 18px;line-height: 70px;">我是宅课学院职场专家</span>
+						</p>
+					</div>
+				</div>
+				<div class="introduce_C">
+					<img src="img/teacher03.jpg" />
+					<div class="introduce_1">
+						<p>
+							中国传媒大学讲师，曾担任大型企业Team Leader，喜欢用风趣的风格授课，让学生在轻松的氛围去学习。
+						</p>
+						<p style="margin-top: 70px;">
+							董策
+							<span style="color: #c2c2c2;font-size: 18px;line-height: 70px;">我是宅课学院职场专家</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="student">
+			<span>学院访谈<a id="showVideoBtn"></a></span>
+			<div class="student_1">
+				<input type="image" src="img/xueyuan-left.png" id="shang" />
+				<ul id="lie">
+					<li style="left: -420px" ><img src="img/student_05.jpg" /></li>
+					<li style="left: -210px" ><img src="img/student_01.jpg" /></li>
+					<li style="left:0" ><img src="img/student_02.jpg" /></li>
+					<li style="left:210px" ><img src="img/student_03.jpg" /></li>
+					<li style="left:420px" ><img src="img/student_04.jpg" / ></li>
+					<li style="left:630px" ><img src="img/student_05.jpg" /></li>
+					<li style="left:840px" ><img src="img/student_01.jpg" /></li>
+					<li style="left:1050px"><img src="img/student_02.jpg" /></li>
+					<li style="left: 1260px" ><img src="img/student_03.jpg" /></li>
+				</ul>
+				<input type="image" src="img/xueyuan-right.png" id="xia" />
+				<div class="student_p">
+					<p>李云彩</p>
+					<p>我还没学完，希望在这里遇到大家！</p>
+				</div>
+				
+			</div>
+		</div>
+		<div class="train">
+			<p style="font-size:20px;margin: 30px 0 30px 190px;color: #333333;">线下培训中心</p>
+			<div class="train_1">
+				<ul>
+					<p>北京</p>
+					<li>
+						中软国际教育科技集团总部
+						<span>
+							北京市海淀区中关村科学院南路2号融科
+							资讯中心C座北楼12层
+						</span>
+					</li>
+					<li>
+						中软国际卓越培训中心
+						<span>
+							北京市昌平区邓庄北京交通职业技术学院
+							北京市海淀区苏州街26号亿方大厦11层
+						</span>
+					</li>
+					<li>
+						中软总公司计算机培训中心
+						<span>
+							北京市海淀区学院南路55号中软大厦B座5层
+						</span>
+					</li>
+				</ul>
+				<div class="spot0" style="left:767px;top:376px"></div>
+				<div class="spot0" style="left:830px;top:170px"></div>
+				<div class="spot0" style="left:673px;top:356px"></div>
+				<div class="spot0" style="left:896px;top:180px"></div>
+				<div class="spot0" style="left:784px;top:453px"></div>
+				<div class="spot0" style="left:840px;top:183px"></div>
+				<div class="spot0" style="left:876px;top:316px"></div>
+				<div class="spot0" style="left:845px;top:443px"></div>
+				<div class="spot0" style="left:950px;top:89px"></div>
+				<div class="spot0" style="left:642px;top:331px"></div>
+				<div class="spot0" style="left:971px;top:51px"></div>
+				<div class="spot0" style="left:869px;top:342px"></div>
+				<div class="spot0" style="left:842px;top:310px"></div>
+				<div class="spot0" style="left:813px;top:372px"></div>
+				<div class="spot0" style="left:855px;top:302px"></div>
+				<div class="spot0" style="left:709px;top:462px"></div>
+				<div class="spot0" style="left:874px;top:237px"></div>
+				<div class="spot0" style="left:895px;top:325px"></div>
+				<div class="spot0" style="left:787px;top:465px"></div>
+				<div class="spot0" style="left:927px;top:127px"></div>
+				<div class="spot0" style="left:788px;top:338px"></div>
+				<div class="spot0" style="left:709px;top:273px"></div>
+				<div class="spot0" style="left:775px;top:263px"></div>
+			</div>
+		</div>
+
+		<div class="house">
+		</div>
+		<div class="foot">
+			<div class="news">
+				<div class="news_1">
+					<ul>
+						<a href="zker.html" target="_blank">
+							<li>关于我们</li>
+						</a>
+						<a href="contact.html" target="_blank">
+							<li>联系我们</li>
+						</a>
+						<a href="law.html" target="_blank">
+							<li>法律条款</li>
+						</a>
+						<a href="qa.html" target="_blank">
+							<li>常见问题</li>
+						</a>
+					</ul>
+				</div>
+				<div class="news_1" style="margin-left: 150px;">
+					<ul>
+						<li>QQ群</li>
+						<a href="http://qm.qq.com/cgi-bin/qm/qr?k=kd3n0HuVDkXSNtxgQ0cxP_Ep-LnmlnlZ" target="_blank">
+							<li>宅客1群： 219639681 加入群 </li>
+						</a>
+						<a href="http://qm.qq.com/cgi-bin/qm/qr?k=hiLaVKEhFCBwinu5O4oFGv6r9H09KeBU" target="_blank">
+							<li> 宅客2群： 2474912212 加入群 </li>
+						</a>
+					</ul>
+				</div>
+				<div class="news_1" style="margin-left: 100px;">
+					<ul>
+						<li style="font-size: 30px;color: #fff;margin:0 0 0 10px;">400-026-2122</li>
+						<a href="">
+							<li>客服时间：9:30-18:30</li>
+						</a>
+						<a href="toFeedback.html" target="_blank">
+							<li><input type="button" value="意见反馈"></li>
+						</a>
+					</ul>
+				</div>
+				<div class="news_2">
+					<img src="img/weixin.png" />
+					<span></span>微信公众号
+				</div>
+				<div class="news_3" style="margin-left: 20px;">
+					<img src="img/weibo.png" />
+					<span></span>新浪微博
+				</div>
+				<p>
+					<img src="img/ETC_logo.png" /> 中软国际教育集团线上品牌 精彩IT人生
+				</p>
+			</div>
+		</div>
+		<div class="tail">
+			Copyright© 2014-2018 中软国际教育京ICP备11010802014778号
+		</div>
+	</body>
+
+</html>

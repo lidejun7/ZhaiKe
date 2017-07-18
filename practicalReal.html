@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/practicalReal.css" />
+		<script type="text/javascript">
+			window.onload = function(){
+				document.onscroll = function(){
+					if((document.body.scrollTop||document.documentElement.scrollTop) >= 200){
+						var miao = 1;
+						var num = document.getElementById('practice').getElementsByTagName('li');
+						for(var i=0;i<num.length;i++){
+							num[i].style.animationPlayState = 'running' ;
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="right_nav">
+			<a href="http://www15.53kf.com/webCompany.php?arg=10126803&style=1"><img src="img/kefu_icon01.gif" /></a>
+			<a href="toFeedback.html"></a>
+			<a href="#top"></a>
+		</div>
+		<div class="top_nav">
+			<div class="logo1 fl">
+				<a href="index.html"><img src="img/logo-30.png" /></a>
+			</div>
+			<div class="column fl">
+				<a href="index.html">
+					<span>首页</span>
+				</a>
+				<a href="practicalReal.html">
+					<span>实战</span>
+				</a>
+				<a href="vlive.html">
+					<span>直播</span>
+				</a>
+				<a href="college.html">
+					<span>职业学院</span>
+				</a>
+			</div>
+			<div class="seek fr">
+				<input type="text" placeholder="搜索课程" class="case" />
+				<a href="http://www.zker.com.cn/searchCourse.do?key="><input type="button" class="fw" /></a>
+				<a href="">登陆</a>
+				<a href="">注册</a>
+			</div>
+		</div>
+
+		<div class="main">
+			<div class="setting">
+				<img src="img/actual.jpg" />
+			</div>
+			<div class="practice">
+				<p style="font-size:20px;color: #333333;">热门实战</p>
+				<ul style="margin-top: 30px;"id="practice">
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=28">
+							<img src="img/20161208112133687.jpg">
+							<p>用13个项目实践数据库设计</p>
+							<p>￥86</p>
+							<div class="course_none">
+								<span>不一样的攻城狮！</span>
+								<p>高级 | 32节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=29">
+							<img src="img/20161209152942543.jpg" />
+							<p>权限管理系统设计与实现</p>
+							<p>￥78</p>
+							<div class="course_none">
+								<span>每个项目几乎都需要权限管理，简单项目、中等项目、复杂项目的权限管理方案各有不同，所有主流方案都看这里，看这里，看这里！</span>
+								<p>高级 | 19节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=30">
+							<img src="img/20161208153005538.jpg" />
+							<p>高德地图Android系统SDK二次开发</p>
+							<p>￥56</p>
+							<div class="course_none">
+								<span>专注高德地图，从零开始学习Android手机端地图开发，定位、手势控制、搜索服务、覆盖物操作、地图事件…..应有尽有!</span>
+								<p>中级 | 38节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=31">
+							<img src="img/20161209153345507.jpg" />
+							<p>基于BUI框架快速搭建企业级后台系统</p>
+							<p>￥26</p>
+							<div class="course_none">
+								<span>HTML5、CSS3、ES6、Zepto.js、MVC模式、动态模板…….最新的、最实用的移动端开发技术应有尽有，玩着玩着就会了。</span>
+								<p>中级 | 21节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=32">
+							<img src="img/20161208105306064.jpg">
+							<p>Android新手案例：个人理财APP</p>
+							<p>$48</p>
+							<div class="course_none">
+								<span>了解一些Android基本知识，需要一个案例带你入门带你飞？个人理财APP实战案例是你最好的选择，堪称新手教科书级别案例!</span>
+								<p>中级 | 54节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=33">
+							<img src="img/20161208105249459.jpg">
+							<p>零基础的JS心理年龄测试游戏</p>
+							<p>$9</p>
+							<div class="course_none">
+								<span>边玩边学，边学边做，不用担心自己弱爆了，真正零基础，会打字就能完成的实战案例！</span>
+								<p>初级 | 52节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=34">
+							<img src="img/20161207161242092.jpg">
+							<p>基于Axure原型设计的小米商城实现</p>
+							<p>$258</p>
+							<div class="course_none">
+								<span>今天你在Cosplay，明天你就是前端大牛；Axure、HTML、CSS、JQuery、LESS…….尽在其中。</span>
+								<p>中级 | 277节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=35">
+							<img src="img/20161207161213832.jpg">
+							<p>餐厅协作服务系统的不同框架技术实现</p>
+							<p>$108</p>
+							<div class="course_none">
+								<span>一个项目用三种技术架构实现，涵盖Spring、Hibernate、Struts、SpringMVC、myBatis主流框架，全网独家，绝无仅有。</span>
+								<p>中级 | 97节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=36">
+							<img src="img/20161207161148200.jpg">
+							<p>基于HTML5的跨平台关卡类游戏SPA实...</p>
+							<p>￥36</p>
+							<div class="course_none">
+								<span>HTML5、CSS3、ES6、Zepto.js、MVC模式、动态模板…….最新的、最实用的移动端开发技术应有尽有，玩着玩着就会了。</span>
+								<p>中级 | 21节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=37">
+							<img src="img/20161207165709718.jpg">
+							<p>Android日记随笔应用开发</p>
+							<p>￥58</p>
+							<div class="course_none">
+								<span>“麻雀虽小，五脏俱全”，涵盖Android开发核心技术， Android初级开发工程师速成神器。</span>
+								<p>中级 | 47节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=38">
+							<img src="img/20161207161124508.jpg">
+							<p>SSH三大框架打造以图会友社交平台</p>
+							<p>￥168</p>
+							<div class="course_none">
+								<span>一个以图会友的网站，一个最新技术的综合案例，一个使用Spring、Hibernate、Struts架构设计的最佳实践。</span>
+								<p>高级 | 81节</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.zker.com.cn/practicalReal/actualDetails.do?id=39">
+							<img src="img/20161207165726048.jpg">
+							<p>主流开源框架组合SSI实现网上书店</p>
+							<p>￥36</p>
+							<div class="course_none">
+								<span>手把手教你用框架界的小鲜肉组合SpringMVC+myBatis实现网上书店，再也不用担心自己Out了！</span>
+								<p>高级 | 34节</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div style="clear: both;">
+			</div>
+			<div class="tutor">
+			</div>
+			<div class="page">
+			</div>
+		</div>
+
+		<div class="foot">
+			<div class="news">
+				<div class="news_1">
+					<ul>
+						<a href="zker.html">
+							<li>关于我们</li>
+						</a>
+						<a href="contact.html">
+							<li>联系我们</li>
+						</a>
+						<a href="law.html">
+							<li>法律条款</li>
+						</a>
+						<a href="qa.html">
+							<li>常见问题</li>
+						</a>
+					</ul>
+				</div>
+				<div class="news_1" style="margin-left: 150px;">
+					<ul>
+						<li>QQ群</li>
+						<a href="http://qm.qq.com/cgi-bin/qm/qr?k=kd3n0HuVDkXSNtxgQ0cxP_Ep-LnmlnlZ">
+							<li>宅客1群： 219639681 加入群 </li>
+						</a>
+						<a href="http://qm.qq.com/cgi-bin/qm/qr?k=hiLaVKEhFCBwinu5O4oFGv6r9H09KeBU">
+							<li> 宅客2群： 2474912212 加入群 </li>
+						</a>
+					</ul>
+				</div>
+				<div class="news_1" style="margin-left: 100px;">
+					<ul>
+						<li style="font-size: 30px;color: #fff;margin:0 0 0 10px;">400-026-2122</li>
+						<a href="">
+							<li>客服时间：9:30-18:30</li>
+						</a>
+						<a href="toFeedback.html">
+							<li><input type="button" value="意见反馈"></li>
+						</a>
+					</ul>
+				</div>
+				<div class="news_2">
+					<img src="img/weixin.png" />
+					<span></span>微信公众号
+				</div>
+				<div class="news_3" style="margin-left: 20px;">
+					<img src="img/weibo.png" />
+					<span></span>新浪微博
+				</div>
+				<p>
+					<img src="img/ETC_logo.png" /> 中软国际教育集团线上品牌 精彩IT人生
+				</p>
+			</div>
+		</div>
+		<div class="tail">
+			Copyright© 2014-2018 中软国际教育京ICP备11010802014778号
+		</div>
+
+	</body>
+
+</html>
